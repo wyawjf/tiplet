@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --color-brand-orange: #FF5500;
+  --color-brand-orange-hover: #E04B00;
+  --color-brand-orange-light: #FFEBE6;
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--font-sans);
+  background-color: #F3F5F9;
+  color: #1A1A1A;
+  min-height: 100vh;
+}
+
+/* Futuristic Neo-Glass Styles (Merging translucent glass and high-end Neumorphic light-shadows) */
+.relief-raised {
+  background: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-bottom: 1.5px solid rgba(165, 178, 200, 0.45);
+  box-shadow: 3px 3px 6px rgba(165, 178, 200, 0.22), 
+              12px 12px 24px rgba(165, 178, 200, 0.14);
+}
+
+.relief-raised-orange {
+  background: #FF5500;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-right: 2px solid rgba(120, 30, 0, 0.45);
+  border-bottom: 2px solid rgba(120, 30, 0, 0.45);
+  box-shadow: 3px 3px 6px rgba(255, 85, 0, 0.2), 
+              12px 12px 24px rgba(255, 85, 0, 0.12);
+}
+
+.relief-inset {
+  background: #EFF1F5;
+  border-top: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-left: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: inset 3px 3px 6px rgba(165, 178, 200, 0.25), 
+              inset -3px -3px 6px rgba(255, 255, 255, 0.95);
+}
+
+.relief-inset-focus:focus-within {
+  background: #FFFFFF;
+  border-top: 1.5px solid rgba(255, 85, 0, 0.35);
+  border-left: 1.5px solid rgba(255, 85, 0, 0.35);
+  border-right: 1.5px solid rgba(255, 85, 0, 0.1);
+  border-bottom: 1.5px solid rgba(255, 85, 0, 0.1);
+  box-shadow: inset 2px 2px 4px rgba(255, 85, 0, 0.12),
+              0px 0px 0px 3px rgba(255, 85, 0, 0.18);
+}
+
+/* Embossed Button with Micro Elastic Feedback */
+.relief-btn {
+  background: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1.5px solid rgba(165, 178, 200, 0.4);
+  border-bottom: 1.5px solid rgba(165, 178, 200, 0.4);
+  box-shadow: 2px 2px 4px rgba(165, 178, 200, 0.18), 
+              6px 6px 12px rgba(165, 178, 200, 0.12);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.relief-btn:hover {
+  transform: translateY(-2px);
+  background: #FFFFFF;
+  border-right: 2px solid rgba(165, 178, 200, 0.5);
+  border-bottom: 2px solid rgba(165, 178, 200, 0.5);
+  box-shadow: 3px 3px 6px rgba(165, 178, 200, 0.24), 
+              10px 10px 20px rgba(165, 178, 200, 0.16);
+}
+
+.relief-btn:active {
+  transform: translateY(1.5px);
+  border-top: 1.5px solid rgba(165, 178, 200, 0.4);
+  border-left: 1.5px solid rgba(165, 178, 200, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: inset 3px 3px 6px rgba(165, 178, 200, 0.22), 
+              inset -2px -2px 4px rgba(255, 255, 255, 0.85);
+}
+
+.relief-btn-orange {
+  background: #FF5500;
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.45);
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  border-right: 2px solid rgba(120, 30, 0, 0.45);
+  border-bottom: 2px solid rgba(120, 30, 0, 0.45);
+  box-shadow: 2px 2px 4px rgba(255, 85, 0, 0.22), 
+              6px 6px 14px rgba(255, 85, 0, 0.14);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.relief-btn-orange:hover {
+  transform: translateY(-2px);
+  background: #FF661A;
+  border-right: 2.5px solid rgba(120, 30, 0, 0.55);
+  border-bottom: 2.5px solid rgba(120, 30, 0, 0.55);
+  box-shadow: 3px 3px 6px rgba(255, 85, 0, 0.28), 
+              10px 10px 24px rgba(255, 85, 0, 0.2);
+}
+
+.relief-btn-orange:active {
+  transform: translateY(1.5px);
+  border-top: 2px solid rgba(120, 30, 0, 0.4);
+  border-left: 2px solid rgba(120, 30, 0, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Glassmorphism Accents */
+.glass-panel {
+  background: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-bottom: 1.5px solid rgba(165, 178, 200, 0.45);
+  box-shadow: 4px 4px 8px rgba(165, 178, 200, 0.22), 
+              14px 14px 28px rgba(165, 178, 200, 0.14);
+}
+
+/* Explicit Artistic Flair classes with premium glassy touch */
+.neu-flat {
+  background: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1.5px solid rgba(165, 178, 200, 0.4);
+  border-bottom: 1.5px solid rgba(165, 178, 200, 0.4);
+  box-shadow: 3px 3px 6px rgba(165, 178, 200, 0.22), 
+              10px 10px 20px rgba(165, 178, 200, 0.14);
+}
+
+.neu-pressed {
+  background: #EFF1F5;
+  border-top: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-left: 1.5px solid rgba(165, 178, 200, 0.45);
+  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: inset 3px 3px 6px rgba(165, 178, 200, 0.25), 
+              inset -3px -3px 6px rgba(255, 255, 255, 0.95);
+}
+
+.neu-orange {
+  background: #FF5500;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-right: 2px solid rgba(120, 30, 0, 0.45);
+  border-bottom: 2px solid rgba(120, 30, 0, 0.45);
+  box-shadow: 2px 2px 4px rgba(255, 85, 0, 0.25), 
+              8px 8px 16px rgba(255, 85, 0, 0.15);
+}
+
+.neu-avatar {
+  background: #FFFFFF;
+  border-top: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1.5px solid rgba(165, 178, 200, 0.4);
+  border-bottom: 1.5px solid rgba(165, 178, 200, 0.4);
+  box-shadow: 3px 3px 6px rgba(165, 178, 200, 0.2), 
+              10px 10px 20px rgba(165, 178, 200, 0.12);
+  border: 4px solid #FFFFFF;
+}
+
+/* Custom Hide Scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 35s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}

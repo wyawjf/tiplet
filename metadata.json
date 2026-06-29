@@ -1,0 +1,6 @@
+{
+  "name": "Tiplet",
+  "description": "A premium, high-contrast, lightweight creator tip widget and donation dashboard sandbox.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

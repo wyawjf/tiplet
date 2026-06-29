@@ -1,0 +1,174 @@
+{
+  "creators": [
+    {
+      "id": "wyatt",
+      "email": "wyatt@example.com",
+      "username": "wyatt",
+      "display_name": "Wyatt Smith",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&h=256&q=80",
+      "bio": "Digital artist and content creator passionate about bringing imagination to life through open-source AI and design tutorials.",
+      "stripe_account_id": "acct_simulated_wyatt",
+      "is_pro": false,
+      "created_at": "2026-05-28T08:29:30.911Z"
+    },
+    {
+      "id": "alex",
+      "email": "alex@example.com",
+      "username": "alex",
+      "display_name": "Alex Rivera",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&h=256&q=80",
+      "bio": "Creating digital art and open-source tools. Your support keeps the coffee flowing!",
+      "stripe_account_id": "acct_simulated_alex",
+      "is_pro": true,
+      "created_at": "2026-06-12T08:29:30.911Z"
+    },
+    {
+      "id": "ancoox2025_608",
+      "email": "ancoox2025@gmail.com",
+      "username": "ancoox2025_608",
+      "display_name": "ENCao X2025",
+      "avatar_url": "/encao_avatar.jpg",
+      "bio": "ENCao X2025 | 独立创意数字艺术家 & 个人剪辑导演。探索极简三维视觉与流体美学的交汇。",
+      "stripe_account_id": "acct_simulated_ancoox2025_608",
+      "is_pro": false,
+      "created_at": "2026-06-27T08:32:10.203Z"
+    }
+  ],
+  "widget_settings": [
+    {
+      "creator_id": "wyatt",
+      "button_text": "Support Wyatt's AI Project",
+      "default_amounts": [
+        5,
+        15,
+        25
+      ],
+      "theme": "orange",
+      "thank_you_message": "Thank you for supporting my AI research! Your support keeps me writing in-depth tutorials and releasing tools.",
+      "goal_text": "$2,000 for a new mic",
+      "goal_amount": 2000
+    },
+    {
+      "creator_id": "alex",
+      "button_text": "Support My Art",
+      "default_amounts": [
+        3,
+        10,
+        20
+      ],
+      "theme": "light",
+      "thank_you_message": "A huge thank you for fuel! Your support keeps my digital brushes running!",
+      "goal_text": "New iPad Pro for Illustration",
+      "goal_amount": 1200
+    },
+    {
+      "creator_id": "ancoox2025_608",
+      "button_text": "Support ENCao X2025",
+      "default_amounts": [
+        5,
+        10,
+        20
+      ],
+      "theme": "orange",
+      "thank_you_message": "Thank you so much for your support! It means the world to me."
+    }
+  ],
+  "tips": [
+    {
+      "id": "tip_1",
+      "creator_id": "wyatt",
+      "supporter_name": "Sarah Jenkins",
+      "supporter_email": "sarah@example.com",
+      "message": "Love your recent video on design systems! Keep up the great work.",
+      "amount": 15,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_1",
+      "payment_status": "paid",
+      "created_at": "2026-06-27T06:29:30.911Z"
+    },
+    {
+      "id": "tip_2",
+      "creator_id": "wyatt",
+      "supporter_name": "Mike T.",
+      "supporter_email": "mike@example.com",
+      "message": "Coffee on me today!",
+      "amount": 5,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_2",
+      "payment_status": "paid",
+      "created_at": "2026-06-27T03:29:30.911Z"
+    },
+    {
+      "id": "tip_3",
+      "creator_id": "wyatt",
+      "supporter_name": "Elena Rodriguez",
+      "supporter_email": "elena@example.com",
+      "message": "Thanks for the awesome stream.",
+      "amount": 25,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_3",
+      "payment_status": "paid",
+      "created_at": "2026-06-26T08:29:30.911Z"
+    },
+    {
+      "id": "tip_4",
+      "creator_id": "alex",
+      "supporter_name": "Marcus T.",
+      "supporter_email": "marcus@example.com",
+      "message": "This is for the new mic you mentioned!",
+      "amount": 50,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_4",
+      "payment_status": "paid",
+      "created_at": "2026-06-25T20:29:30.911Z"
+    },
+    {
+      "id": "tip_ancoox_1",
+      "creator_id": "ancoox2025_608",
+      "supporter_name": "林海 (Lin Hai)",
+      "supporter_email": "linhai@example.com",
+      "message": "非常喜欢你的开源作品，加油！",
+      "amount": 25,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_ancoox_1",
+      "payment_status": "paid",
+      "created_at": "2026-06-27T08:15:30.911Z"
+    },
+    {
+      "id": "tip_ancoox_2",
+      "creator_id": "ancoox2025_608",
+      "supporter_name": "Anna Becker",
+      "supporter_email": "anna.b@example.de",
+      "message": "Great documentation and clean layouts. Thanks a lot!",
+      "amount": 10,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_ancoox_2",
+      "payment_status": "paid",
+      "created_at": "2026-06-27T05:44:12.911Z"
+    },
+    {
+      "id": "tip_ancoox_3",
+      "creator_id": "ancoox2025_608",
+      "supporter_name": "张伟 (Zhang Wei)",
+      "supporter_email": "zhangwei@example.com",
+      "message": "买杯咖啡，祝项目越来越好！",
+      "amount": 5,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_ancoox_3",
+      "payment_status": "paid",
+      "created_at": "2026-06-26T22:12:05.911Z"
+    },
+    {
+      "id": "tip_ancoox_4",
+      "creator_id": "ancoox2025_608",
+      "supporter_name": "David Miller",
+      "supporter_email": "david.m@example.com",
+      "message": "This is outstanding. Keep up the amazing work on Spring Boot as well!",
+      "amount": 100,
+      "currency": "EUR",
+      "stripe_session_id": "cs_live_simulated_ancoox_4",
+      "payment_status": "paid",
+      "created_at": "2026-06-26T14:30:22.911Z"
+    }
+  ]
+}
