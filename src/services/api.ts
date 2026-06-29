@@ -64,6 +64,7 @@ export const api = {
     thank_you_message?: string;
     goal_text?: string;
     goal_amount?: number;
+    default_amounts?: number[];
     new_username?: string;
   }) => {
     const res = await fetch(`${API_BASE_URL}/api/dashboard/settings`, {
